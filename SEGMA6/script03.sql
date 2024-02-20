@@ -1,0 +1,1 @@
+INSERT INTO produto VALUES (102, 'Papel Toalha', 109, 300, 5.75, 3.10);
