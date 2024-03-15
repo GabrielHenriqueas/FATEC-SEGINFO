@@ -1,0 +1,18 @@
+p.red {
+    background-color: red;
+    border-radius: 5px;
+    border: 2px solid green;
+    color: aliceblue;
+}
+p.green {
+    background-color: green;
+    border-radius: 5px;
+    border: 2px solid blue;
+    color: aliceblue;
+}
+p.blue {
+    background-color: blue;
+    border-radius: 5px;
+    border: 2px solid red;
+    color: aliceblue;
+}
