@@ -1,0 +1,122 @@
+<html><head><title>Identificação do Aluno</title>
+</head>
+
+<script language="Javascript">
+var certos=0;
+var errados=0;
+
+function quem(){
+var nome=window.prompt("Indentifique-se por favor","Digite seu Nome");
+var mail=window.prompt("Digite seu e-mail","E-mail");
+document.form1.txtnome.value=nome.toUpperCase();
+document.form1.txtmail.value=mail.toLowerCase();
+document.form1.txtnome.disabled=true;
+document.form1.txtmail.disabled=true;
+document.form1.btenviar.disabled=true;}
+
+function verifica1(rec){
+if(rec=='1'){
+certos++;
+window.status="Certos "+certos+" Errados "+errados;
+document.form1.B1.disabled=true;
+document.form1.B2.disabled=true;
+document.form1.B3.disabled=true;
+document.form1.B4.disabled=true;}
+else{
+errados++;
+window.status="Certos "+certos+" Errados "+errados;
+document.form1.B1.disabled=true;
+document.form1.B2.disabled=true;
+document.form1.B3.disabled=true;
+document.form1.B4.disabled=true;}
+}
+
+function verifica2(rec){
+if(rec=='1'){
+certos++;
+window.status="Certos "+certos+" Errados "+errados;
+document.form1.B5.disabled=true;
+document.form1.B6.disabled=true;
+document.form1.B7.disabled=true;
+document.form1.B8.disabled=true;}
+else{
+errados++;
+window.status="Certos "+certos+" Errados "+errados;
+document.form1.B5.disabled=true;
+document.form1.B6.disabled=true;
+document.form1.B7.disabled=true;
+document.form1.B8.disabled=true;}
+}
+
+
+function verifica3(rec){
+if(rec=='1'){
+certos++;
+window.status="Certos "+certos+" Errados "+errados;
+document.form1.B9.disabled=true;
+document.form1.B10.disabled=true;
+document.form1.B11.disabled=true;
+document.form1.B12.disabled=true;
+document.form1.txtcerto.value=certos;
+document.form1.txterrado.value=errados;
+document.form1.txtcerto.disabled=true;
+document.form1.txterrado.disabled=true;}
+else{
+errados++;
+window.status="Certos "+certos+" Errados "+errados;
+document.form1.B9.disabled=true;
+document.form1.B10.disabled=true;
+document.form1.B11.disabled=true;
+document.form1.B12.disabled=true;
+document.form1.txtcerto.value=certos;
+document.form1.txterrado.value=errados;
+document.form1.txtcerto.disabled=true;
+document.form1.txterrado.disabled=true;}
+}
+
+
+</script>
+
+
+<body onload="quem()" bgcolor="gold">
+
+<form name="form1" action="mailto:lcsros@ig.com.br" enctype="text" method="post">
+
+<font color="#0000FF" size="4"><strong>Identificação do Aluno</strong></font></p>
+
+<p align="left"><font color="#000000" size="3"><strong>Nome: </strong></font>
+<input type="text" size="26" name="txtnome"></p>
+
+<p align="left"><strong>E-mail:</strong>
+<input type="text" size="26" name="txtmail"></p>
+
+<p align="left"><strong>Certas: </strong>
+<input type="text" size="5" name="txtcerto"></p>
+
+<p align="left"><strong>Erradas:</strong>
+<input type="text" size="5" name="txterrado"></p>
+
+<p align="center"><font color="#FF0000" size="4"><strong>Questões</strong></font></p>
+
+<p>1-) As tags que permitem identificar o código em JavaScript são:<br><br>
+<input type="button" name="B1" value="A" onclick="verifica1('0')">< SCRIPT >..< /SCRIPT ><br><br>
+<input type="button" name="B2" value="B" onclick="verifica1('0')">< script >..< /script ><br><br>
+<input type="button" name="B3" value="C" onclick="verifica1('0')">< SCRIPT LANGUAGE="JAVASCRIPT" >..< /SCRIPT ><br><br> 
+<input type="button" name="B4" value="D" onclick="verifica1('1')">< script language="Javascript" > ..< /script ><br><br>
+
+2-) A forma correta para declarar uma variável em Javascript é:<br><br>
+<input type="button" name="B5" value="A" onclick="verifica2('0')">var a=0;<br><br>
+<input type="button" name="B6" value="B" onclick="verifica2('0')">a=0;<br><br>
+<input type="button" name="B7" value="C" onclick="verifica2('0')">variables a;<br><br>
+<input type="button" name="B8" value="D" onclick="verifica2('1')">As alternativas <strong>A</strong>e<strong>B</strong> estão corretas<br><br>
+
+3-) Para alterar a cor de fundo da página em Javascript,deve ser utilizado o comando:<br><br>
+<input type="button" name="B9" value="A" onclick="verifica3('0')">Document.bgcolor=cor;<br><br>
+<input type="button" name="B10" value="B" onclick="verifica3('0')">document.fgcolor=cor;<br><br>
+<input type="button" name="B11" value="C" onclick="verifica3('1')">document.bgColor=cor;<br><br>
+<input type="button" name="B12" value="D" onclick="verifica3('0')">document.fgColor=cor;<br><br>
+
+<center><input type="submit"  name="btenviar" value="Enviar o Resultado"><center>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Aula 7 -</title>
+</head>
+
+<body>
+
+<p align="center"><font color="#FF0000" size="4"><strong>Aula 7 -
+Funções de Usuário em JavaScript</strong></font></p>
+
+<p>Esta aula considero o ponto mais interessante do curso , pois
+a partir deste momento criaremos as nossas funções e diremos
+quando elas serão executadas através de eventos.</p>
+
+<p>Uma função pode ser entendida com uma rotina desenvolvida
+pelo programador que com o uso de vários comando ficarão
+dispostos de uma forma lógica para chegar ao resultado desejado.
+Complicado ???? Bom vamos ver um exemplo que ficará mais fácil
+para o entendimento.</p>
+
+<p align="center"><font color="#800000" size="4"><strong><u>Função
+simples</u></strong></font></p>
+
+<p><strong>&lt;html&gt;&lt;head&gt;&lt;title&gt;Funções de
+Usuário em JavaScript&lt;/title&gt;&lt;/head&gt;<br>
+<br>
+&lt;script language=&quot;Javascript&quot;&gt;<br>
+<br>
+</strong><font color="#FF0000"><strong>function entra(){<br>
+var i;<br>
+var nome=window.prompt(&quot;Digite um Nome&quot;, &quot;&quot;);<br>
+for (i=1;i&lt;11;i++){<br>
+document.write(nome,&quot;&lt;br&gt;&quot;);}<br>
+}<br>
+</strong></font><strong><br>
+&lt;/script&gt;<br>
+<br>
+&lt;body&gt;<br>
+&lt;center&gt;&lt;input type=&quot;button&quot;
+name=&quot;bt1&quot; value=&quot;Clique&quot; </strong><font
+color="#0000FF"><strong>onclick=&quot;entra()&quot;</strong></font><strong>&gt;<br>
+&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp<br>
+&lt;input type=&quot;button&quot; name=&quot;bt2&quot;
+value=&quot;Fechar&quot; onclick=&quot;window.close()&quot;&gt;<br>
+&lt;/center&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</strong></p>
+
+<p><font color="#800000" size="4"><strong><u>Detalhes do código</u></strong></font></p>
+
+<p>O que está em cor azul <font color="#0000FF"><strong>onclick=&quot;entra()&quot;</strong></font><font
+color="#000000"> faz a chamada da função no instante que o
+ponteiro do mouse for posicionado sobre o botão e efetuar o
+click.</font></p>
+
+<p><font color="#000000">O que está na cor vermelha é
+propriamente a função que abre a caixa de diálogo e aguarda a
+digitação de um nome. Depois a informação é armazenada na
+variável <strong>nome</strong>. Logo em seguida um laço de
+repetição é iniciado, imprimindo na página dez vezes o nome
+digitado através do comando <strong>document.write( )</strong>.
+Dentro deste comando existe a variável <strong>nome</strong> e
+depois o código em HTML que realiza a quebra de linha <strong>&lt;br&gt;</strong></font></p>
+
+<p><strong>Após a execução do exemplo, clique no
+botão voltar do navegador e depois no botão fechar da página
+que é exibida e confirme seu fechamento.</strong></p>
+
+<p><a href="exefunc.htm" target="_Blank"><font color="#0000FF">Clique
+aqui e veja o exemplo</font></a></p>
+
+<p align="center"><font color="#800000" size="4"><strong><u>Função
+com parâmetro</u></strong></font></p>
+
+<p>Quando trabalhamos com parâmetros, significa chamar a
+função e enviar um valor que possa ser recebido na função
+solicitada. O que quero dizer em em alguns casos precisamos de um
+informação para depois completar a execução de uma função.
+Vou demosntrar um exemplo com a mesma idéia do exemplo que
+utilizei em função simples.Vou determinar qual é o nome que
+será exibido dez vezes, sem o internauta digitar.</p>
+
+<p><strong>&lt;html&gt;&lt;head&gt;&lt;title&gt;Funções de
+Usuário em JavaScript com parâmentros&lt;/title&gt;<br>
+<br>
+&lt;script language=&quot;Javascript&quot;&gt;<br>
+<br>
+</strong><font color="#FF0000"><strong>function entra(recebe){<br>
+var i;<br>
+for (i=1;i&lt;11;i++){<br>
+document.write(recebe,&quot;&lt;br&gt;&quot;);}<br>
+}</strong></font><strong><br>
+<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;center&gt;&lt;input type=&quot;button&quot;
+name=&quot;bt1&quot; value=&quot;Clique&quot; </strong><font
+color="#0000FF"><strong>onclick=&quot;entra('Curso de
+Javascript')&quot;</strong></font><strong>&gt;<br>
+&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp<br>
+&lt;input type=&quot;button&quot; name=&quot;bt2&quot;
+value=&quot;Fechar&quot; onclick=&quot;window.close()&quot;&gt;<br>
+&lt;/center&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</strong></p>
+
+<p><font color="#800000" size="4"><strong><u>Detalhes do código</u></strong></font></p>
+
+<p>O que está na cor azul <font color="#0000FF"><strong>onclick=&quot;entra('Curso
+de Javascript')&quot;</strong> </font><font color="#000000">refere-se
+a chamada da função entra, porém com o parâmentro <strong>'Curso
+de Javascript'</strong> que será enviado para a função
+chamada.</font></p>
+
+<p><font color="#000000">Na função chamada </font><font
+color="#FF0000"><strong>function entra(recebe)</strong></font><font
+color="#000000"> , existe uma variável de nome <strong>recebe</strong>
+que guarda o valor passado como parâmetro. Logo em seguida um
+laço de repetição é iniciado, imprimindo na página dez vezes
+o conteúdo da variável <strong>recebe</strong> através do
+comando <strong>document.write( )</strong>. Dentro deste comando
+existe a variável <strong>recebe</strong> e depois o código em
+HTML que realiza a quebra de linha <strong>&lt;br&gt;</strong></font></p>
+
+<p><strong>Após a execução do exemplo, clique no
+botão voltar do navegador e depois no botão fechar da página
+que é exibida e confirme seu fechamento.</strong></p>
+
+<p><a href="exefuncpara.htm" target="_Blank">Clique aqui e veja o
+exemplo</a></p>
+</body>
+</html>

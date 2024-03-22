@@ -1,0 +1,272 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Aula</title>
+</head>
+
+<body>
+
+<p align="center"><b><font size="4" color="#FF0000">&nbsp;Aula - 9&nbsp;
+Produção de Material Didático com JavaScript</font></b></p>
+<p align="left">Nesta aula estarei explicando como produzir um material
+didático com JavaScript. A idéia&nbsp; é bem simples , você pode elaborar o
+conteúdo necessário e depois criar um mecanismo de avaliação.Esse mecanismo
+de avaliação funciona como uma página, onde o aluno responderá um
+questionário de múltipla escolha e ao término ele saberá exatamente quantas
+questões acertou e quantas errou.Dessa forma terá um botão onde ao clicar
+será enviado ao resultado para o e-mail do destinatário, neste caso o seu.</p>
+<p align="left"><b><font color="#FF0000">1º Passo:&nbsp;</font><font color="#008000">criando
+a página com o contexto a ser trabalhado</font></b></p>
+<p align="left">Inicie o Microsoft FrontPage 2000</p>
+<p align="left"><img border="0" src="aula9.1.gif" width="440" height="449"></p>
+<p align="left">Aqui você deve elaborar um arquivo comum com o assunto
+que deseja trabalhar com os alunos.No meu exemplo estou ilustrando do próprio
+JavaScript&nbsp;</p>
+<p align="left"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:PT-BR;mso-fareast-language:
+PT-BR;mso-bidi-language:AR-SA"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:317.25pt;
+ height:237.75pt'>
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/03/clip_image001.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:272.25pt;
+ height:204pt'>
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/03/clip_image001.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:316.5pt;
+ height:237pt'>
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/05/clip_image001.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="aula9.1.jpg" v:shapes="_x0000_i1025" width="422" height="316"></span></p>
+<p align="left">Após digitar todo o conteúdo, você deverá inserir um link ,
+selecionando a palavra desejada, no meu caso será questões. Este link é feito com JavaScript, onde deverá abrir somente uma
+janela simples sem os controles.</p>
+<p align="left">Clique no <b>Menu Ferramentas </b>- <b>Macro </b>- <b>Editor de
+scripts da Microsoft</b></p>
+<p align="left"><img border="0" src="aula9.3.gif" width="499" height="246"></p>
+<p align="left">Neste instante você terá acesso a&nbsp; janela de código.
+Observe que o código a que me refiro é o HTML e justamente aqui é que vamos
+inserir o código em JavaScript.Para facilitar a digitação feche as janelas
+laterais, de forma que fique somente a janela de código com HTML conforme a
+ilustração abaixo:</p>
+<p align="left"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:PT-BR;mso-fareast-language:
+PT-BR;mso-bidi-language:AR-SA"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:371.25pt;
+ height:278.25pt'>
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/02/clip_image001.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="aula9.4.jpg" v:shapes="_x0000_i1025" width="495" height="371"></span></p>
+<p align="left"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:PT-BR;mso-fareast-language:
+PT-BR;mso-bidi-language:AR-SA"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:416.25pt;
+ height:312pt'>
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/02/clip_image001.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="aula9.5.jpg" v:shapes="_x0000_i1025" width="555" height="416"></span></p>
+<p align="left">Repare que a linha em destaque é o código a ser digitado.Localize
+a palavra <font color="#0000FF">Questões</font>.Antes desta palavra você deverá digitar a linha
+abaixo:</p>
+<p align="left"><b><font color="#0000FF">&lt;a href=&quot;Javascript:window.open('questões.htm','janela','status=yes,menubar=no,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+toolbar=no,location=no,scrollbars=yes')&quot;&gt;Questões&lt;/a></font></b></p>
+<p align="left"><b><font color="#FF0000">Você se lembra deste código.... Bom
+aqui estou referenciando um arquivo de nome </font><font color="#0000FF">questões.htm</font><font color="#FF0000">
+que será aberto em uma nova janela do navegador, somente com a barra de status
+e rolagem. As demais foram desativadas por não terem necessidade.</font></b></p>
+<p align="left">Após esta etapa, salve a página com o nome de <b>textojava.htm</b></p>
+<p align="left"><a href="textojava.htm" target="_Blank">Clique aqui e confira o modelo</a></p>
+<p align="left"><b><font color="#FF0000">2º Passo</font><font color="#008000">
+:Criando a página de questões</font></b></p>
+<p align="left">Esta é a parte mais trabalhosa, pois além de montar as
+questões, você terá que programar todos os controles. Vamos utilizar tudo
+que vimos no curso, funções com passagem de parâmetros, eventos, comando if..else
+entre outros.</p>
+<p align="left">Inicie uma nova página no FrontPage 2000. Para isso clique no
+botão <b>Nova Página</b> na barra de ferramenta e monte o formulário como no
+modelo abaixo:</p>
+<p align="left"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:PT-BR;mso-fareast-language:
+PT-BR;mso-bidi-language:AR-SA"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:361.5pt;
+ height:271.5pt'>
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image001.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="aula9.2.jpg" v:shapes="_x0000_i1025" width="482" height="362"></span>.</p>
+<p align="left">A primeira parte, consiste em identificar os dados do aluno e
+logo em seguida a posição de acertos e erros.Agora vamos nomear os objetos
+pois é dessa forma que o JavaScript os identificará. Clique com o botão
+direito sobre a primeira caixa de texto e selecione <b>propriedades do campo do
+formulário</b></p>
+<p align="left"><img border="0" src="aula9.2.gif" width="531" height="295"></p>
+<table border="0" width="100%">
+  <tr>
+    <td width="50%"><img border="0" src="aula9.8.gif" width="357" height="201"></td>
+    <td width="50%"><img border="0" src="aula9.4.gif" width="264" height="192"></td>
+  </tr>
+</table>
+<p align="left">Feito isto, formate o fundo da página em uma cor de sua
+preferência e depois escreva o título <b>Questões</b>. Formule a primeira questão e
+adicione dois <b>botões de opção</b></p>
+<p align="left"><img border="0" src="aula9.5.gif" width="373" height="453"></p>
+<p align="left">Selecione o primeiro botão e selecione <b>propriedades do campo
+do formulário</b>.Altere os campos conforme a ilustração abaixo. Depois
+repita o mesmo procedimento para o botão falso</p>
+<table border="0" width="100%" height="207">
+  <tr>
+    <td width="50%" height="178"><img border="0" src="aula9.6.gif" width="386" height="178"></td>
+    <td width="50%" height="178">No campo <b>nome do grupo digite<font color="#FF0000">
+      opt1</font> </b>e o valor inicial <b>0</b></td>
+  </tr>
+  <tr>
+    <td width="50%" height="17"><img border="0" src="aula9.12.gif" width="384" height="180"></td>
+    <td width="50%" height="17">No campo <b>nome do grupo digite<font color="#FF0000">
+      opt2</font> </b>e o valor inicial <b>1</b></td>
+  </tr>
+</table>
+<p align="left">Formule a segunda questão e adicione 4 botões de ação</p>
+<p align="left"><img border="0" src="aula9.9.gif" width="639" height="222"></p>
+<p align="left">Agora altere a propriedade dos botões conforme a ilustração
+abaixo:</p>
+<table border="0" width="100%">
+  <tr>
+    <td width="50%"><img border="0" src="aula9.10.gif" width="428" height="201"></td>
+    <td width="50%">O Botão A terá o nome B1 e rótulo A&nbsp; e assim teremos
+      B2 para B, B3 para o C e B4 para D&nbsp;&nbsp;</td>
+  </tr>
+</table>
+<p align="left">Por fim adicione o último botão só que este será do tipo
+submeter para enviar os dados.E salve esta página com o nome de <b>questões.htm</b></p>
+<p align="left"><img border="0" src="aula9.11.gif" width="430" height="274"></p>
+<p align="left"><a href="questões.htm" target="_Blank">Clique aqui e veja como ficou</a> </p>
+
+</body>
+
+</html>

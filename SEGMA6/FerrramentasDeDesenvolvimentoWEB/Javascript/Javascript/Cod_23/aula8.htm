@@ -1,0 +1,191 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>Aula 8 -</title>
+</head>
+
+<body>
+
+<p align="center"><font color="#FF0000" size="4"><strong>Aula 8 -
+Cálculos em JavaScript</strong></font></p>
+
+<p>Em Javascript é possível realizar cálculos, basta para isto
+enteder que é necessário o uso de uma função que converta um
+alfanumérico em um número inteiro, assim o cálculo será
+efetuado.Vou demostrar o uso de um alfanumérico e de um número
+inteiro.</p>
+
+<p><font color="#008000"><strong>1-) <u> Alfanumérico:</u></strong></font>
+Imagine que queira realizar um operação para somar dois
+números você teria algo assim</p>
+
+<p>&quot;10&quot;+&quot;10&quot;= 1010 o que aqui foi a união
+deste dois números porque são alfanuméricos, observe as aspas
+! isto quer dizer que os alfanuméricos foram concatenados(<strong>unidos</strong>)
+um ao outro.</p>
+
+<p>Veja o código abaixo :</p>
+
+<p><strong>&lt;html&gt;&lt;head&gt;&lt;title&gt;Cáculo entre
+dois afanuméricos&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+<br>
+&lt;script language=&quot;Javascript&quot;&gt;<br>
+var n1='10';<br>
+var n2='10';<br>
+total=n1+n2;<br>
+alert(&quot;O Resultado da operação com alfanumérico -&gt;
+&quot;+ total);<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/html&gt;<br>
+</strong></p>
+
+<p>Executando o exemplo acima : <a href="exealfa.htm"
+target="_Blank">Clique aqui</a></p>
+
+<p><font color="#008000"><strong>2-) <u> Numérico:</u></strong></font>
+Agora para realizar uma operação é preciso utilizar uma
+variável que guarde este valor entre duas variáveis </p>
+
+<p>total=10+10 se exibir o conteúdo da variável verá que são
+20.</p>
+
+<p>Veja o código abaixo:</p>
+
+<p><strong>&lt;html&gt;&lt;head&gt;&lt;title&gt;Cáculo entre
+dois afanuméricos&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+<br>
+&lt;script language=&quot;Javascript&quot;&gt;<br>
+var n1=10;<br>
+var n2=10;<br>
+total=n1+n2;<br>
+alert(&quot;O Resultado da operação com alfanumérico -&gt;
+&quot;+ total);<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/html&gt;</strong></p>
+
+<p>Executando o exemplo acima : <a href="exenum.htm"
+target="_Blank">Clique aqui</a></p>
+
+<p align="center"><font color="#FF0000" size="4"><strong>Uso de
+uma função de conversão</strong></font></p>
+
+<p>Bom até agora os exemplo aqui demonstrados foram bem simples.
+Vamos supor que queira digitar os dados em duas caixas de textos
+distintas e depois clicar em um botão que faça o cálculo.Aqui
+será necessário o uso de uma função matemática que converta
+os alfanuméricos em inteiro.O layout que montarei será o que
+vem a seguir: </p>
+
+<p align="center"><img src="aula8.1.jpg" width="390" height="380"></p>
+
+<p><font color="#FF0000" size="4"><strong><u>Listagem do código
+completa</u></strong></font></p>
+
+<p><font color="#000000"><strong>&lt;htm&gt;&lt;head&gt;&lt;title&gt;Cálculos
+entre objeto de Texto&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+</strong></font><font color="#0000FF"><strong>&lt;script
+language=&quot;Javascript&quot;&gt;<br>
+function operacao(){<br>
+var a=eval(document.formcalc.t1.value);<br>
+var b=eval(document.formcalc.t2.value);<br>
+var c=a+b;<br>
+alert(&quot;O Resultado da operação é -&gt; &quot;+c);<br>
+}<br>
+&lt;/script&gt;</strong></font><font color="#000000"><strong><br>
+&lt;body&gt;<br>
+&lt;form name=&quot;formcalc&quot;&gt;<br>
+&lt;h3&gt;&lt;center&gt;Cálculo em JavaScript&lt;/h3&gt;<br>
+Digite o primeiro número:&lt;input type=&quot;text&quot;
+name=&quot;t1&quot; size=&quot;4&quot;
+maxlenght=&quot;4&quot;&gt;<br>
+&lt;br&gt;&lt;br&gt;<br>
+Digite o segundo número:&lt;input type=&quot;text&quot;
+name=&quot;t2&quot; size=&quot;4&quot;
+maxlenght=&quot;4&quot;&gt;<br>
+&lt;br&gt;&lt;br&gt;&lt;hr&gt;&lt;br&gt;&lt;br&gt;<br>
+&lt;input type=&quot;button&quot; name=&quot;bt1&quot;
+value=&quot;Calcular&quot; </strong></font><font color="#0000FF"><strong>onclick=&quot;operacao()&quot;</strong></font><font
+color="#000000"><strong>&gt;<br>
+&amp;nbsp&amp;nbsp<br>
+&lt;input type=&quot;reset&quot; name=&quot;bt2&quot;
+value=&quot;Cancelar&quot; </strong></font><font color="#FF0000"><strong>onclick=&quot;document.formcalc.t1.focus()&quot;</strong></font><font
+color="#000000"><strong>&gt;<br>
+&amp;nbsp&amp;nbsp<br>
+&lt;input type=&quot;button&quot; name=&quot;bt3&quot;
+value=&quot;Fechar&quot; </strong></font><font color="#804000"><strong>onclick=&quot;window.close()&quot;</strong></font><font
+color="#000000"><strong>&gt;&lt;/center&gt;<br>
+&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;<br>
+</strong></font></p>
+
+<p><strong><u><font size="4" color="#800000">Detalhes do Código</font></u></strong></p>
+
+<p><b><font color="#008000">1-) Código em Javascript</font></b></p>
+
+<p><font color="#0000FF"><strong>&lt;script
+language=&quot;Javascript&quot;&gt;<br>
+function operacao(){<br>
+var a=eval(document.formcalc.t1.value);<br>
+var b=eval(document.formcalc.t2.value);<br>
+var c=a+b;<br>
+alert(&quot;O Resultado da operação é -&gt; &quot;+c);<br>
+}<br>
+&lt;/script&gt;</strong></font></p>
+
+<p>Bom acima temos a definição da função no qual dei o nome de <b>operacao </b>e
+logo em seguida as duas linhas se encarregam de capturar os valores digitados
+nas caixas de textos e depois realiza a conversão através da função <b>eval(
+)</b> atribuindo já o valor numérico as suas respectivas variáveis.</p>
+
+<p>Depois é realizado um cálculo simples de adição a guardando o valor
+somado na variável <b>c</b>. Por fim o resultado é exibida na caixa de saída
+com o <b>alert( )</b></p>
+
+<p><b><font color="#008000">2</font></b><b><font color="#008000">-) Chamada da
+função calculo( ) em Javascript</font></b></p>
+
+<p><strong><font color="#0000FF">onclick=&quot;operacao()&quot;&nbsp;</font><b>&nbsp;</b></strong></p>
+
+<p>Esta instrução é simples, pois foi usado o evento de mouse e feita a
+menção ao nome de uma função já citada no código em Javascript.Observe o
+detalhe das letras minúscula que utilizei, pois como já sabe se colocar
+acentos ou digitar qualquer letra em maíusculo a função não será
+localizada.&nbsp;</p>
+
+<p><b><font color="#008000">3-) Limpando o dados digitados</font></b></p>
+
+<p><font
+color="#000000"><strong>
+&lt;input type=&quot;reset&quot; name=&quot;bt2&quot; value=&quot;Cancelar&quot; </strong></font><font color="#FF0000"><strong>onclick=&quot;document.formcalc.t1.focus()&quot;</strong></font><font
+color="#000000"><strong>&gt; </strong></font></p>
+
+<p>Esta linha parece bem complicada, porém o o tipo <b>reset</b> representa
+recomeço e mais adiante a instrução localiza o formulário(<b>formcalc</b>) e
+depois a primeira caixa de texto chamada aqui de (<b>t1</b>). Por último o
+comando (<b>focus( )</b>) se encarrega de fazer o cursor ficar piscando nesta
+caixa caso o internauta queira digitar outro número.</p>
+
+<p><b><font color="#008000">4-) Fechando a Janela</font></b></p>
+
+<p><font
+color="#000000"><strong>
+&lt;input type=&quot;button&quot; name=&quot;bt3&quot; value=&quot;Fechar&quot; </strong></font><font color="#804000"><strong>onclick=&quot;window.close()&quot;</strong></font><font
+color="#000000"><strong>&gt;<br>
+</strong></font></p>
+
+<p>Bom aqui esta instrução (<font color="#804000"><strong>onclick=&quot;window.close()&quot;</strong></font>)
+executará o fechamento da janela após o clique do mouse.Parece complicado não ? Acredito que você já deve estar
+acostumado com essa programação. Eu reservei o link para você
+ver o script sendo executado por completo.</p>
+
+<p>Ver o código executando: <a href="exeformcalc.htm" target="_Blank">Clique
+aqui</a></p>
+</body>
+</html>

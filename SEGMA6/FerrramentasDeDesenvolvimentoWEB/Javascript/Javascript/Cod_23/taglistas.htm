@@ -1,0 +1,101 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Internet</title>
+</head>
+
+<body>
+
+<p align="center"><b><font size="5" color="#800000">TAGS para criação de
+listas ordenadas e não ordenadas</font></b></p>
+
+
+<b>Quando um navegador encontra a TAG &lt;OL&gt; que corresponde ao início de
+uma lista ordenada ou numerada, ele começa a mostrar cada item, que compõe a
+lista, precedido de números. Cada item passa a utilizar a TAG &lt;LI&gt;. A
+lista ordenada é finalizada com a TAG &lt;/OL&gt;.&nbsp;&nbsp;</b>
+
+
+<br align="left">
+<br><b><font size="4" color="#800080">Exemplos de listas ordenadas</font></b><br>
+<br><font color="#800000"><font size="3">&lt;OL&gt;</font><br>
+<font color="#000000" size="3">&nbsp;&nbsp;&nbsp;</font> <font size="3">&lt;LI&gt; Identificação</font><br>
+<font color="#000000" size="3">&nbsp;&nbsp;&nbsp;</font> <font color="#000000" size="3">&lt;LI&gt; Objetivo</font><br>
+<font color="#000000" size="3">&nbsp;&nbsp;&nbsp;</font> <font color="#000000" size="3">&lt;LI&gt; Relação de material utilizado</font><br>
+<font color="#000000" size="3">&nbsp;&nbsp;&nbsp;</font> <font color="#000000" size="3">&lt;LI&gt; Desenvolvimento Teórico</font><br>
+<font color="#000000" size="3">&nbsp;&nbsp;&nbsp;</font> <font color="#000000" size="3">&lt;LI&gt; Cálculos</font><br>
+<font color="#000000" size="3">&nbsp;&nbsp;&nbsp;</font> <font color="#000000" size="3">&lt;LI&gt; Conclusões</font><br>
+<font color="#000000" size="3">&lt;/OL&gt;</font>
+</font>
+<p><b>O resultado está apresentado a seguir</b></p>
+<ol>
+  <li>Identificação</li>
+  <li>Objetivo</li>
+  <li>Relação de material utilizado</li>
+  <li>Desenvolvimento Teórico</li>
+  <li>Cálculos</li>
+  <li>Conclusões</li>
+</ol>
+<p>Caso queiramos utilizar um tipo definido de marcador (1,i,I,a,A) devemos
+empregar o atributo TYPE juntamente com &lt;OL&gt; ou seja, &lt; OL TYPE = i &gt;.&nbsp;</p>
+<font color="#800000"><b>&lt;OL Type =I&gt;</b><br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;LI&gt; Movimento Uniforme<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <b>&lt;OL Type=a&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;LI&gt; Lei Horária<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><b>
+</b><font color="#800000"><b>&lt;</b>LI<b> &gt;</b> Representação Gráfica<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;</b>LI<b>
+&gt;</b> Encontro de Móveis<br>
+&lt;/OL&gt;</font>
+
+<p><b>O resultado está apresentado a seguir</b></p>
+<ol type=I>
+	<LI> Movimento Uniforme
+	<OL type=a>
+		<li>Lei Horária
+		<li>Representação Gráfica
+		<li>Encontro de Móveis
+</ol> 
+</ol>
+<p>Podemos também, criar listas não ordenadas. Os símbolos empregados&nbsp;
+são o&nbsp; <font color="#800000">CIRCLE </font><font color="#000000">(circunferência)</font>, <font color="#800000">SQUARE
+</font>
+<font color="#000000">(quadrado)</font>
+ou <font color="#800000">DISC </font><font color="#000000">(círculo). Essas
+listas são iniciadas com a TAG </font><font color="#800000"> &lt;UL&gt;</font><font color="#000000"> e cada item emprega a TAG
+</font><font color="#800000"> &lt;LI Type=&quot;nome&quot;&gt;</font><font color="#000000">,
+onde nome pode ser <b>CIRCLE</b>, <b>DISC</b> ou <b>SQUARE.</b></font></p>
+<b><font size="4" color="#800080">Exemplos de listas não ordenadas</font></b>
+<p><font color="#800000">&lt;UL&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;LI&gt; Português<br>
+&nbsp;&nbsp;&nbsp; &lt;LI&gt; Matemática<br>
+&nbsp;&nbsp;&nbsp; &lt;LI&gt; História<br>
+&lt;/UL&gt;</font><br>
+<b>Resultado:</b>
+<p>Português<br>
+Matemática<br>
+História
+<p>&lt;<font color="#800000">UL&gt;</font><br>
+<font color="#800000">&nbsp;&nbsp;&nbsp;</font>
+<font color="#800000">&lt;LI Type=&quot;square&quot;&gt; Português</font><br>
+<font color="#800000">&nbsp;&nbsp;&nbsp;</font>
+<font color="#800000">&lt;LI Type=&quot;disc&quot;&gt; Matemática</font><br>
+<font color="#800000">&nbsp;&nbsp;&nbsp;</font>
+<font color="#800000">&lt;LI Type=&quot;circle&quot;&gt;História</font><br>
+<font color="#800000">&lt;/UL&gt;</font><br>
+<b>Resultado:</b>
+<ul>
+<li type="square"> Português
+<li type="disc"> Matemática
+<li type="circle">História
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<html><head><title>Avaliação de Javascript</title>
+
+</head>
+
+<script language="Javascript">
+
+function quem(){
+var nome=window.prompt("Digite Seu Nome Completo","Nome");
+var mail=window.prompt("Digite seu e-mail","email");
+document.formquest.txtnome.value=nome.toUpperCase();
+document.formquest.txtmail.value=mail.toLowerCase();
+document.formquest.txtnome.disabled=true;
+document.formquest.txtmail.disabled=true;
+document.formquest.bt2.disabled=true;}
+
+
+var certos=0;
+var errados=0;
+
+function verifica1(rec){
+if(rec==1){
+certos++;
+window.status="Certas "+certos+" Erradas "+errados;
+document.formquest.opt1.disabled=true;
+document.formquest.opt2.disabled=true;}
+else{
+errados++;
+window.status="Certas "+certos+" Erradas "+errados;
+document.formquest.opt1.disabled=true;
+document.formquest.opt2.disabled=true;}
+}
+
+function verifica2(rec){
+if(rec==1){
+certos++;
+window.status="Certas "+certos+" Erradas "+errados;
+document.formquest.opt3.disabled=true;
+document.formquest.opt4.disabled=true;
+document.formquest.bt2.disabled=false;}
+else{
+errados++;
+window.status="Certas "+certos+" Erradas "+errados;
+document.formquest.opt3.disabled=true;
+document.formquest.opt4.disabled=true;
+document.formquest.bt2.disabled=false;}
+}
+
+function verifica3(rec){
+if(rec==1){
+certos++;
+window.status="Certas "+certos+" Erradas "+errados;
+document.formquest.opt5.disabled=true;
+document.formquest.opt6.disabled=true;
+document.formquest.bt2.disabled=false;
+document.formquest.txtcertos.value=certos;
+document.formquest.txterros.value=errados;
+document.formquest.txtnome.disabled=false;
+document.formquest.txtmail.disabled=false;}
+else{
+errados++;
+window.status="Certas "+certos+" Erradas "+errados;
+document.formquest.opt5.disabled=true;
+document.formquest.opt6.disabled=true;
+document.formquest.bt2.disabled=false;
+document.formquest.txtcertos.value=certos;
+document.formquest.txterros.value=errados;
+document.formquest.txtnome.disabled=false;
+document.formquest.txtmail.disabled=false;}
+
+}
+
+</script>
+<body onload="quem()" bgcolor="gold">
+<form action="mailto:lcsros@ig.com.br" ENCTYPE="text" method="post" name="formquest">
+Nome....: <input type="text" name="txtnome" size="35"><br>
+E-mail..:&nbsp&nbsp<input type="text" name="txtmail" size="35"><br>
+Acertos.:&nbsp<input type="text" name="txtcertos"size="2"><br>
+Erros....:&nbsp&nbsp<input type="text" name="txterros"size="2"><br><br>
+
+<h3><center>Questões</center></h3><br>
+1-)Javascript é uma linguagem de programação que pode ser adicionada em qualquer parte da página.<br>
+<input type="radio" name="opt1" onclick="verifica1('0')">Verdadeiro<br>
+<input type="radio" name="opt2" onclick="verifica1('1')">Falso<br><br>
+2-)Javascript é uma linguagem sensível a letras maiúsculas e minúnsculas<br>
+<input type="radio" name="opt3" onclick="verifica2('1')">Verdadeiro<br>
+<input type="radio" name="opt4" onclick="verifica2('0')">Falso<br><br><br>
+3-)Com Javascript podemos criar efeitos especiais,controlar dados digitados antes de enviá-los<br>
+<input type="radio" name="opt5" onclick="verifica3('1')">Verdadeiro<br>
+<input type="radio" name="opt6" onclick="verifica3('0')">Falso<br><br><br><center>
+<input type="submit" name="bt2" value="Enviar o resultado"></center>
+</form></body></html>

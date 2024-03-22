@@ -1,0 +1,143 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Aula 2 - Variáveis em Javascript</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<p align="center"><font color="#FF0000" size="4"><strong>Aula 2 -
+Variáveis em JavaScript</strong></font></p>
+
+<p align="left"><font color="#000000">As variáveis permite
+guardar dados na memória da máquina durante a execução de
+programas, páginas ou scripts. Sempre que referenciá-las elas
+estarão prontas para entrarem em ação e receber ou enviar
+dados conforme a solicitação do usuário. Para criar variáveis
+em Javascript, você deve adotar um padrão e para facilitar o
+seu aprendizado no curso estipulei algumas regras básicas:</font></p>
+
+<p align="left"><font color="#000000">1-) Um nome de variável
+deve sempre começar por uma letra</font></p>
+
+<p align="left"><font color="#000000">2-) Não utilize símbolos
+especiais tais como:(! @ # $ % ^ &amp; * : ; &quot; ', . / ? + =
+~`)</font></p>
+
+<p align="left"><font color="#000000">3-) Procure escrever os
+nomes das variáveis sempre em minúsculo uma vez que Javascript
+é sensível a letras maiúsculas e minúsculas</font></p>
+
+<p align="left"><font color="#000000">4-) Procure dar nomes as
+variáveis que lembrem o seu conteúdo</font></p>
+
+<p align="left">Para declarar uma variável em Javascript, você
+poderá utilizar ou não a denominação <strong>var</strong> ,
+mas lembre-se que esta deve ser digitada em minúsculo.</p>
+
+<p align="left"><font color="#008000"><strong>Exemplo-1</strong></font></p>
+
+<p align="left"><font color="#000000">var nome=&quot;ETE LAURO
+GOMES&quot;; ou nome=&quot;ETE LAURO GOMES&quot;;</font></p>
+
+<p align="left"><font color="#000000">A diferença entre as duas
+declarações é justamente a denominação <strong>var</strong>
+na frente do nome da variável.</font></p>
+
+<p align="left"><font color="#000000">Uma das facilidades de
+Javascript é que você não precisa especificar o tipo de
+variável , ou seja, se criar uma variável e atribuir um
+conteúdo texto e na linha seguinte atribuir um conteúdo
+numérico, o próprio navegador interpreta a instrução e
+converte normalmente sem nenhum problema.</font></p>
+
+<p align="left"><font color="#008000"><strong>Exemplo-2</strong></font></p>
+
+<p align="left"><font color="#000000">var nome=&quot;ETE LAURO
+GOMES&quot;;</font></p>
+
+<p align="left"><font color="#000000">var nome = 1234;</font></p>
+
+<p align="left"><font color="#008000"><strong>Exemplo-3</strong></font></p>
+
+<p align="left"><font color="#000000">Para melhor compreender
+este assunto, vamos descomplicar escrevendo um código em
+Javascript que vai permitir a entrada de um nome em uma variável
+e depois exibí-la em uma caixa de diálogo.</font></p>
+
+<p align="left"><font color="#000000">1 -) Abra o bloco de notas
+e digite com muita atenção o código completo abaixo.</font></p>
+
+<p align="left"><font color="#000000"><img src="aula2.5.jpg"
+width="551" height="356"></font></p>
+
+<p align="left"><font color="#000000">2-) Salve este arquivo com
+o nome de <strong>exemplo2.htm</strong></font></p>
+
+<p align="left"><font color="#000000">3-) Faça a abertura do
+arquivo no seu navegador. Se tiver alguma dúvida de como
+fazê-lo, volte a aula 1 e reveja o procedimento.</font></p>
+
+<p align="left">Observe que seu navegador exibiu duas caixas de
+diálogo:</p>
+
+<p align="left"><font color="#008000"><strong>1ª Caixa de
+diálogo</strong></font></p>
+
+<p align="left"><img src="aula2.1.jpg" width="491" height="129"></p>
+
+<p align="left"><font color="#008000"><strong>2ª Caixa de
+diálogo</strong></font></p>
+
+<p align="left"><img src="aula2.2.jpg" width="267" height="122"></p>
+
+<p align="left">Se tiver alguma dúvida, clique no link para ver
+o resultado <a href="exemplo2.htm">exemplo2.htm</a></p>
+
+<p align="left"><font color="#0000FF"><strong>Detalhes do código
+em Javascript</strong></font></p>
+
+<p>1. &lt;script language=&quot;Javascript&quot;&gt; </p>
+
+<p><strong>Informamos ao navegador qual é a linguagem de scripts
+a ser interpretada</strong></p>
+
+<p>2. var nome=window.prompt(&quot;Digite seu Nome&quot;,
+&quot;Nome do Internauta&quot;);</p>
+
+<p><strong>Foi declarada uma variável <b>nome</b> que receberá o
+conteúdo digitado na caixa de diálogo. Observe que o comando
+utilizado é o window.prompt ( ) e na sequência o texto que
+deverá aparecer na caixa para o internauta ler. Separado por
+vírgula está o valor padrão que neste caso foi utilizado um
+texto.Este valor padrão é opcional e caso não queira
+exibí-lo, você deverá colocar o valor padrão vazio ( &quot;
+&quot;). Dessa forma o comando ficaria com a seguinte escrita:</strong><font
+color="#0000FF"><strong> var nome=window.prompt(&quot;Digite seu
+Nome&quot;, &quot; &quot;);</strong></font></p>
+
+<p><font color="#000000">3. alert(&quot;Olá &quot;+nome+&quot;
+Seja Bem-Vindo !!!&quot;);</font></p>
+
+<p><font color="#000000"><strong>Nesta linha utilizei a função
+que acredito ser conhecida por você, o alert( ) que tem a
+função de exibir a caixa de diálogo para o internauta. A
+única diferença é que neste exemplo estou utilizando a
+variável nome que recebe o nome digitado pelo internauta e
+armazena na mesma.A escrita ficou um pouco diferente, pois estou
+unindo texto com conteúdo de variável e para a perfeita união,
+foi utilizado o operando ( + ) que concatena a frase inteira.</strong></font></p>
+
+<p><font color="#000000">4.&lt;/script&gt;</font></p>
+
+<p><font color="#000000"><strong>Por fim nesta linha estamos
+finalizando o código em Javascript.Observe que estamos evoluindo
+e com este exemplo acabamos por aprender mais um.</strong></font></p>
+
+<p>Na próxima aula, estarei explicando por completo vários
+comando que utilizaremos em todo o curso.</p>
+</body>
+</html>

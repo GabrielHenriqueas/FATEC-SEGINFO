@@ -1,0 +1,128 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Internet</title>
+</head>
+
+<body>
+
+<p align="center"><b><font size="5" color="#800000">TAGS para inserção de
+imagens</font></b></p>
+
+
+<br align="left"><b><font color="#800080" size="4">Inserindo Imagem em um
+documento HTML</font></b><br><b><font color="#000000">Para inserirmos uma imagem
+em um documento HTML devemos utilizar a TAG </font><font color="#800000">&lt;IMG
+SRC&gt;</font><font color="#000000">. Ela é única, ou seja, não necessita de
+TAG de finalização ( </font><font color="#FF0000">&lt;/img src&gt;</font><font color="#000000">
+)</font></b>.
+<br><b>O arquivo que contém a imagem a ser utilizada em sua Web page deverá
+estar armazenada, em seu provedor de acesso (yahoo, hpg, uol, vilabol, etc.)
+juntamente com o seu documento em HTML.</b>
+<br><b>As imagens a serem incluídas devem estar no formato GIF ( Graphics
+Interchange Format ) ou JPEG ( Joint Photographers Expert Group ). O formato
+JPEG se enquadra melhor para imagens digitalizadas enquanto o formato GIF deve
+ser preferido para imagens com cores lisas, pois nesse caso a compressão seria
+melhor quando comparada à compressão feita pelo JPEG.&nbsp;</b><br><b>&nbsp;O
+formato JPEG é um padrão que pode comprimir imagens até 20% do seu tamanho
+original sem perda perceptível na qualidade. Em alguns casos as imagens no
+formato GIF apresentam melhor qualidade e/ou tamanho quando comparado com o
+formato JPEG.</b>
+<p><b>Exemplo: <font color="#800000">&lt;IMG SRC = &quot;c:\hp\foto1.JPEG&gt;</font>
+=&gt; com esta TAG você irá inserir uma figura de nome <font color="#008000">foto1.jpeg</font>
+que esta na pasta denominada <font color="#008000">hp</font> armazenada no <font color="#008000">HD</font>
+de seu computador.</b></p>
+<p><b><font color="#800080" size="4">Digitalizando uma imagem para ser utilizada na
+Internet</font></b></p>
+<p><b><font color="#000000">Quando formos escanear (digitalizar) uma imagem para
+utilizá-la na Internet devemos tomar o cuidado de escolher a resolução de 78
+ppp (pontos por polegada), pois esta é a resolução dos monitores utilizados
+nos computadores (VGA e SVGA). Uma resolução maior implica numa imagem
+resultante de maior tamanho e isto acaba acarretando problemas de lentidão
+quando ela for aberta em sua página. Outro problema que precisa ser analisado
+é o número de cores empregado durante o processo de escaneamento(digitalização).
+Quanto maior o número de cores maior o tamanho da imagem obtida. O procedimento
+ideal é escanear com o número máximo de cores e depois, utilizando um
+software adequado ( Corel Photopaint, Adobe Photoshoh, etc.) reduzir o número
+de cores e em conseqüência o tamanho da imagem ficará menor. </font></b></p>
+<p><b><font color="#800080" size="4">Atributos empregados na TAG &lt;IMG&gt; </font></b></p>
+<table border="1" width="100%">
+  <tr>
+    <td width="19%"><b><font size="4">Atributo</font></b></td>
+    <td width="81%"><b><font size="4">Descrição</font></b></td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Border</b></td>
+    <td width="81%">Border = 4 - o número define a espessura da borda que
+      contorna a imagem.</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Alt</b></td>
+    <td width="81%">Alt = &quot; meu carro novo&quot; - apresenta um texto
+      alternativo quando o navegador é do tipo texto ou quando, nos navegadores
+      gráficos, as imagens são desabilitadas.</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Width e Height</b></td>
+    <td width="81%">Width = &quot;340&quot; Eight = &quot;260&quot; - definem as
+      dimensões da imagem. Esses atributos, na maioria dos editores de HTML já
+      recebem valores automaticamente.&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%" rowspan="6"><b>Align</b></td>
+    <td width="81%">Top - serve para alinhar um texto com o topo da imagem.</td>
+  </tr>
+  <tr>
+    <td width="81%">Bottom - serve para alinhar um texto com a parte de baixo da
+      imagem.&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="81%">Right - serve para alinhar a imagem a direita de textos,
+      imagens, etc.</td>
+  </tr>
+  <tr>
+    <td width="81%">Left - serve para alinhar a imagem a esquerda de textos,
+      imagens, etc.</td>
+  </tr>
+  <tr>
+    <td width="81%">Middle - serve para alinhar a imagem com o meio da imagem.</td>
+  </tr>
+  <tr>
+    <td width="81%"><font color="#008000">Obs.: &lt;BR CLEAR=RIGHT&gt; libera o
+      texto desses alinhamentos</font></td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Vspace e Hspace</b></td>
+    <td width="81%">servem para definir o espaçamento vertical e horizontal,
+      respectivamente, entre as imagens e os textos que circundam essas imagens.</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Lowscr</b></td>
+    <td width="81%">serve para sobrepor duas imagens de mesma dimensão(os
+      atributos Width e Eight devem ser obrigatoriamente usados). O detalhe
+      importante é que a primeira imagem a ser carregada deve ter um arquivo de
+      tamanho bem menor que a segunda.</td>
+  </tr>
+</table>
+<br><font color="#800080"><b>Algumas considerações:</b></font>
+<br>a) É possível criarmos um link para outra página ou outro endereço na
+Internet a partir de uma imagem.
+<br>b) Uma imagem entrelaçada, no formato GIF, torna a visualização da página mais rápida,
+visto que, o navegador ao invés de trazer a imagem como um todo o faz por
+etapas, aumentando gradativamente a sua resolução. Para construímos uma
+imagem entrelaçada devemos nos valer de software como por exemplo o LView Pro
+(www.baixaki.com.br). O formato (<b>gif87a</b>) é o que apresenta melhor
+resolução para os arquivos&nbsp; &quot;Intelaced&quot;.&nbsp; 
+<br>c) Se desejarmos criar uma imagem com fundo transparente, o formato é <b>gif89a.
+</b>Existem vários softwares que permitem a criação deste tipo de imagem
+dentre os quais podemos destacar o LView Pro.
+<p>&nbsp;</p>
+<p>
+<br></p>
+</body>
+
+</html>

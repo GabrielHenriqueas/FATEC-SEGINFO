@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Nome</title>
+</head>
+<script language="Javascript">
+var certos=0;
+var erros=0;
+function quem(){
+var nome=window.prompt("Identifique-se por favor","Digite seu nome");
+var mail=window.prompt("Digite seu e-mail","E-mail");
+document.formquest.txtnome.value=nome.toUpperCase();
+document.formquest.txtmail.value=mail.toLowerCase();
+document.formquest.txtnome.disabled=true;
+document.formquest.txtmail.disabled=true;
+document.formquest.BTENVIAR.disabled=true;
+}
+function verifica1(rec){
+if (rec==1){
+certos++;
+window.status="Acertos "+ certos + " Erros "+ erros;
+document.formquest.opt1.disabled=true;
+document.formquest.opt2.disabled=true;}
+else{
+erros++;
+window.status="Acertos "+ certos+ " Erros "+ erros;
+document.formquest.opt1.disabled=true;
+document.formquest.opt2.disabled=true;}
+}
+
+function verifica2(rec){
+if (rec==1){
+certos++;
+window.status="Acertos "+ certos + " Erros "+ erros;
+document.formquest.B1.disabled=true;
+document.formquest.B2.disabled=true;
+document.formquest.B3.disabled=true;
+document.formquest.B4.disabled=true;
+document.formquest.txtcertos.value=certos;
+document.formquest.txterros.value=erros;
+document.formquest.txtnome.disabled=false;
+document.formquest.txtmail.disabled=false;
+document.formquest.BTENVIAR.disabled=false;}
+else{
+erros++;
+window.status="Acertos "+ certos+ " Erros "+ erros;
+document.formquest.B1.disabled=true;
+document.formquest.B2.disabled=true;
+document.formquest.B3.disabled=true;
+document.formquest.B4.disabled=true;
+document.formquest.txtcertos.value=certos;
+document.formquest.txterros.value=erros;
+document.formquest.txtnome.disabled=false;
+document.formquest.txtmail.disabled=false;
+document.formquest.BTENVIAR.disabled=false;}
+}
+</script>
+
+
+<body bgcolor="#FFCC00" text="#0000FF" onload="quem()">
+
+<form method="POST" action="mailto:lcsros@ig.com.br" enctype="text" method="post"
+                    name="formquest">
+  <p><b>Nome....:</b><input type="text" name="txtnome" size="35"></p>
+  <p><b>E-mail...:</b><input type="text" name="txtmail" size="35"></p>
+  <p><b>Acertos.:</b><input type="text" name="txtcertos" size="2"></p>
+  <p><b>Erros.....:</b><input type="text" name="txterros" size="2"></p>
+<p align="center"><b><font size="4" color="#0000FF">Questões</font></b></p>
+<p align="left"><b><font color="#0000FF" size="3">1-) JavaScript é uma
+linguagem de programação usada em parceria com HTML para tornarem as páginas
+dinâmicas.</font></b></p>
+  <p align="left"><input type="radio" name="opt1" onclick="verifica1(0)"><b>Verdadeiro</b></p>
+  <p align="left"><input type="radio" name="opt2" onclick="verifica1(1)"><b>Falso</b></p>
+<p align="left"><b><font color="#0000FF" size="3">2-)Tanto o JavaScript como o
+VBScript são linguagem utilizadas para páginas da Web. Qual dessas linguagens
+executam scripts em navegadores diferentes ?</font></b></p>
+  <p align="left"><input type="button" value="A" name="B1" onclick="verifica2(1)"><b>JavaScript</b></p>
+  <p align="left"><input type="button" value="B" name="B2" onclick="verifica2(0)"><b>VBScript</b></p>
+  <p align="left"><input type="button" value="C" name="B3" onclick="verifica2(0)"><b>Ambas as
+  linguagens executam scripts em navegadores diferentes</b></p>
+  <p align="left"><input type="button" value="D" name="B4" onclick="verifica2(0)"><b>n.d.a</b></p>
+   <p align="center"><input type="submit" value="Enviar Resultado" name="BTENVIAR"></p>
+</form>
+<p align="center">&nbsp;</p>
+
+</body>
+
+</html>

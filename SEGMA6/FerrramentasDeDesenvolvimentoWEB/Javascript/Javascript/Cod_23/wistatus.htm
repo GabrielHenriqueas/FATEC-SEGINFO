@@ -1,0 +1,29 @@
+<html><head><title>Comando window.status em javascript</title></head>
+
+<script language="Javascript">
+
+alert("Olhe para a Barra de status do seu navegador !!!");
+
+function mensagem(){
+window.status="Javascript é muito fácil ......";
+}
+
+function limpar(){
+window.status=" ";
+}
+</script>
+
+<body bgcolor="gold">
+<form>
+<font color="blue"><b><center>
+<input type="button" name="bt1"  value="Passe o mouse sobre o botão" 
+                    onmousemove="mensagem()"
+                    onmouseout="limpar()"><br><br>
+Passe o mouse sobre o botão e veja a mensagem que está sendo exibida na barra de status do navegador<br>
+Quando retirar o mouse da superfície do botão as informações são apagadas.
+</b></font><br><br>
+<h3><a href="Javascript:history.go(-1)">Voltar </a></h3></center>
+</form>
+</body>
+
+</html>

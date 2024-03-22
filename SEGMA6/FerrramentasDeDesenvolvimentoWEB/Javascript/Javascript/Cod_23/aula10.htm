@@ -1,0 +1,173 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Aula 10</title>
+</head>
+
+<body>
+
+<p align="center"><b><font size="4" color="#FF0000">Aula 10 - Programando o
+formulário de Questões</font></b></p>
+<p align="left"><font size="3">Bom aqui vamos iniciar nossa programação em
+JavaScript. Abra o formulário <b>questões.htm</b> no FrontPage.Clique no menu <b>Ferramentas</b>,
+selecione <b>Macro</b> e depois <b>Editor de scripts da Microsoft</b></font></p>
+<p align="left"><img border="0" src="aula1012.gif" width="416" height="181"></p>
+<p align="left">Posicione o mouse depois da tag &lt;/head&gt; e pressione
+vários &lt;enter&gt; para abrir linhas e permitir a digitação do código.</p>
+<p align="left"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:PT-BR;mso-fareast-language:
+PT-BR;mso-bidi-language:AR-SA"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:425.25pt;
+ height:318.75pt'>
+ <v:imagedata src="../../WINDOWS/TEMP/msoclip1/01/clip_image001.png"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="aula1013.jpg" v:shapes="_x0000_i1025" width="567" height="425"></span></p>
+<p align="left">Digite o seguinte código entre as tags de JavaScript:</p>
+
+<p><b><font size="4" color="#FF0000"><u>1-) Função de identificação do aluno</u></font></b></p>
+</script>
+<pre><font color="#0000FF"><b>&lt;script language=&quot;Javascript&quot;&gt;
+var certos=0;
+var erros=0;
+function quem(){
+var nome=window.prompt(&quot;Identifique-se por favor&quot;,&quot;Digite seu nome&quot;);
+var mail=window.prompt(&quot;Digite seu e-mail&quot;,&quot;E-mail&quot;);
+document.formquest.txtnome.value=nome.toUpperCase();
+document.formquest.txtmail.value=mail.toLowerCase();
+document.formquest.txtnome.disabled=true;
+document.formquest.txtmail.disabled=true;
+document.formquest.BTENVIAR.disabled=true;
+}
+&lt;body bgcolor=&quot;#FFCC00&quot; text=&quot;#0000FF&quot; onload=&quot;quem()&quot;&gt;</b></font></pre>
+<p><font color="#800000" size="4"><b><u>Detalhes do código</u></b></font></p>
+<p align="left"><font color="#000000">Existe uma função de nome <b>quem</b> que é
+chamada toda vez que a página é carregada, através do eventos de sistema </font><font color="#0000FF"><b>onload=&quot;quem()&quot;</b></font>.Ao
+entrar na função duas variáveis são criadas tendo como conteúdo o valor
+inicial 0 <font color="#0000FF"><b>var certos=0; </b></font>e&nbsp;<font color="#0000FF"><b>
+ var erros=0;</b></font></p>
+
+<p align="left">Na função as variáveis <b>nome</b> e <b>mail</b> são
+carregadas pelo comando window.prompt( ). Depois as duas variáveis tem seu
+conteúdo armazenado nas respectivas caixas de texto. O nome é convertido para
+maiúsculo <font color="#0000FF"><b>nome.toUpperCase(); </b></font>e o e-mail é
+convertido para minúsculo <font color="#0000FF"><b>mail.toLowerCase();</b></font>
+Em seguida as duas caixas de textos são desativadas pelo comando <font color="#0000FF"><b>document.formquest.txtnome.disabled=true;</b></font>
+e <font color="#0000FF"><b>document.formquest.txtmail.disabled=true;</b></font> Por fim o botão enviar também está desativado, pois assim evita do aluno
+clicar e enviar o formulário sem nenhum conteúdo para seu destinatário.</p>
+
+<script language="Javascript">
+function quem(){
+var nome=window.prompt("Identifique-se por favor","Digite seu nome");
+var mail=window.prompt("Digite seu e-mail","E-mail");
+document.formquest.txtnome.value=nome.toUpperCase();
+document.formquest.txtmail.value=mail.toLowerCase()
+document.formquest.txtnome.disabled=true
+document.formquest.txtmail.disabled=true
+}
+</script>
+<p align="left"><b><font size="4" color="#FF0000"><u>2-) Função do objeto
+radio do formulário</u></font></b></p>
+
+<pre><b><font color="#0000FF">function verifica1(rec){
+if (rec==1){
+certos++;
+window.status=&quot;Acertos &quot;+ certos + &quot; Erros &quot;+ erros;
+document.formquest.opt1.disabled=true;
+document.formquest.opt2.disabled=true;}
+else{
+erros++;
+window.status=&quot;Acertos &quot;+ certos+ &quot; Erros &quot;+ erros;
+document.formquest.opt1.disabled=true;
+document.formquest.opt2.disabled=true;}
+}</font></b></pre>
+<pre><b><font color="#0000FF">&lt;input type=&quot;radio&quot; name=&quot;opt1&quot; onclick=&quot;verifica1(0)&quot;&gt;Verdadeiro
+&lt;input type=&quot;radio&quot; name=&quot;opt2&quot; onclick=&quot;verifica1(1)&quot;&gt;Falso</font></b></pre>
+<p align="left"><font color="#800000" size="4"><b><u>Detalhes do código</u></b></font></p>
+<p align="left">Na função verifica1( rec), a variável parâmetro <b>(rec) </b>recebe
+um dos valores passado pelo objeto radio que foi clicado <b><font color="#0000FF">onclick=&quot;verifica1(0)&quot;
+</font></b>ou<b><font color="#0000FF">&nbsp; onclick=&quot;verifica1(1)&quot;</font></b>.Como
+a resposta correta está no segundo objeto, então <font color="#0000FF"><b>rec</b></font>
+receberá o valor 1.A partir deste ponto é realizado um teste , sendo o valor 1
+então será somado 1 no contador de <b>certos</b> e exibido automaticamente na
+barra de status do navegador através do comando <b><font color="#0000FF">window.status=&quot;Acertos
+&quot;+ certos+ &quot; Erros &quot;+ erros;</font></b> Observe que as
+variáveis<b> certos</b> e <b>erros</b> estão escritas sem aspas, pois é o seu
+conteúdo que deverá ser escrito.As duas linhas seguintes se encarregam de
+desativar os dois objeto de radio.O mesmo vai acontecer se o aluno clicar na
+resposta errada.</p>
+<p align="left"><b><font size="4" color="#FF0000"><u>2-) Função do objeto
+button do formulário</u></font></b></p>
+<pre><font color="#0000FF"><b>function verifica2(rec){
+if (rec==1){
+certos++;
+window.status=&quot;Acertos &quot;+ certos + &quot; Erros &quot;+ erros;
+document.formquest.B1.disabled=true;
+document.formquest.B2.disabled=true;
+document.formquest.B3.disabled=true;
+document.formquest.B4.disabled=true;
+document.formquest.txtcertos.value=certos;
+document.formquest.txterros.value=erros;
+document.formquest.txtnome.disabled=false;
+document.formquest.txtmail.disabled=false;
+document.formquest.BTENVIAR.disabled=false;}
+else{
+erros++;
+window.status=&quot;Acertos &quot;+ certos+ &quot; Erros &quot;+ erros;
+document.formquest.B1.disabled=true;
+document.formquest.B2.disabled=true;
+document.formquest.B3.disabled=true;
+document.formquest.B4.disabled=true;
+document.formquest.txtcertos.value=certos;
+document.formquest.txterros.value=erros;
+document.formquest.txtnome.disabled=false;
+document.formquest.txtmail.disabled=false;
+document.formquest.BTENVIAR.disabled=false;}
+}</b></font></pre>
+<p align="left"><font color="#800000" size="4"><b><u>Detalhes do código</u></b></font></p>
+<p align="left">Bem olhando para o tamanho do código, parece que ao invés de
+facilitar, está é complicando demais.Na realidade o código é o mesmo, porém
+os objetos agora são botões. Por isso que existem mais controles para serem
+desligados.E além do mais esta é a última questão da página, então você
+deverá carregar os valores de acertos e erros para os objetos através do
+comando <font color="#0000FF"><b>document.formquest.txtcertos.value=certos;</b></font><b><font color="#0000FF">
+</font></b>e<b><font color="#0000FF">
+</font></b><font color="#0000FF"><b>document.formquest.txterros.value=erros;</b>
+</font>e depois destravar os demais controles onde estão o nome, e-mail e o
+botão de envio para que o aluno possa finalizar as questões e você
+recebê-las.A linha responsável pelo envio dos dados é:</p>
+<p align="left"><b><font color="#FF0000">&lt;form method=&quot;POST&quot; action=&quot;<a href="mailto:seu%20email@provedor.com.br">mailto:seu
+email@provedor.com.br</a>&quot; </font></b> <b><font color="#FF0000">enctype=&quot;text&quot;
+method=&quot;post&quot; name=&quot;formquest&quot;&gt;</font></b></p>
+<p align="left">Bom espero que tenha entendido o propósito desta aula. Na
+seção de download, você terá dois modelos em anexo com o código completo ,
+baixe em seu computador e confira.</p>
+
+<p align="left"><a href="textojava.htm" target="_Blank">Clique aqui e veja o resultado final</a></p>
+
+</body>
+
+</html>

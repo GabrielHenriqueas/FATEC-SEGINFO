@@ -1,0 +1,119 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Aula 6</title>
+</head>
+
+<body>
+
+<p align="center"><font color="#FF0000" size="4"><b>Aula 6 -
+Laços de Repetição em JavaScript</b></font></p>
+
+<p align="left">Em Javascript temos 3 tipos de estrutura de
+repetição&nbsp; que servem para executar um script várias
+vezes.Vamos estudar essas estruturas agora:</p>
+
+<p align="left"><font color="#800000"><b>1-) Estrutura </b></font><font
+color="#FF0000"><b>for</b></font></p>
+
+<p align="left">De todas as estruturas de repetição esta é a
+mais utilizada pela sua praticidade.Veja um exemplo, supondo que
+queira imprimir dez vezes o nome <b>ETE LAURO GOMES</b> na
+página, você teria o seguinte código:</p>
+
+<p align="left"><b>&lt;html&gt;&lt;head&gt;&lt;title&gt;Laço de
+repetição fo&lt;/title&gt;&lt;/head&gt;<br>
+<br>
+&lt;script language=&quot;Javascript&quot;&gt;<br>
+<br>
+for(i=1;i&lt;11;i++){<br>
+document.write(i+&quot; ETE LAURO
+GOMES&quot;+&quot;&lt;br&gt;&quot;);}<br>
+<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/html&gt;</b></p>
+
+<p align="left">A estrutura for é composta de três partes:<b>
+(inicialização da variável ; teste condicional e incremento da
+variável)</b> assim no exemplo acima a variável i é iniciada
+com o valor 1. Logo em seguida o teste i&lt;11, isto quer dizer
+que o laço se repetirá até que o valor da variável i atingir
+11. Por fim o incremento a variável i</p>
+
+<p align="left">Veja o exemplo:<a href="lacofor.htm"
+target="_Blank"> Clique aqui</a></p>
+
+<p align="left"><font color="#800000"><b>2-) Estrutura </b></font><font
+color="#FF0000"><b>while</b></font></p>
+
+<p align="left">A estrutura while faz a mesma coisa que o for,
+porém a variável de controle do laço deve ser iniciada antes
+da instrução while. Veja a colocação no código abaixo:</p>
+
+<p align="left"><b>&lt;html&gt;&lt;head&gt;&lt;title&gt;Laço de
+repetição fo&lt;/title&gt;&lt;/head&gt;<br>
+<br>
+&lt;script language=&quot;Javascript&quot;&gt;<br>
+var i=1;<br>
+while(i&lt;11){<br>
+document.write(i+&quot; ETE LAURO
+GOMES&quot;+&quot;&lt;br&gt;&quot;);<br>
+i++;}<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/html&gt;</b></p>
+
+<p align="left">Veja o exemplo: <a href="lacowhile.htm"
+target="_Blank">Clique aqui</a></p>
+
+<p align="left"><font color="#800000"><strong>3-) Estrutura </strong></font><font
+color="#FF0000"><strong>do..while</strong></font></p>
+
+<p>A estrutura do.. while faz a mesma coisa que as outras duas
+anteriores, porém além da variável de controle do laço ser
+iniciada antes da instrução do..while, a repetição é
+executada pelo menos uma vez antes da verificação do teste
+condicional.Veja a colocação no código abaixo:</p>
+
+<p><strong>&lt;html&gt;&lt;head&gt;&lt;title&gt;Laço de
+repetição fo&lt;/title&gt;&lt;/head&gt;<br>
+<br>
+&lt;script language=&quot;Javascript&quot;&gt;<br>
+var i=1;<br>
+do{<br>
+document.write(i+&quot; ETE LAURO
+GOMES&quot;+&quot;&lt;br&gt;&quot;);<br>
+i++;}<br>
+while(i&lt;11);<br>
+&lt;/script&gt;<br>
+<br>
+&lt;html&gt;</strong></p>
+
+<p>Veja o exemplo: <a href="lacodowhile.htm" target="_Blank">Clique
+aqui</a></p>
+
+<p align="center"><font color="#FF0000" size="5"><strong>Exercícios
+</strong></font></p>
+
+<p>Bom aqui fechamos as estruturas de repetição em Javascript e
+agora para ver se realmente este assunto foi entendido, vou
+propor alguns exercícios.</p>
+
+<ul>
+    <li>Desenvolver uma página que contenha código em
+        Javascript que exiba os números de 1 a 15
+        sucessivamente. Fácil não? Então vamos lá .... quando
+        terminar o código salve com o nome de <strong>conta.htm</strong>
+        e depois abra no seu navegador.</li>
+    <li>Agora antere o código e faça a impressão na tela em
+        ordem decrescente , ou seja, de 15 a 1. Salve este
+        arquivo com o nome de <strong>contadesc.htm</strong></li>
+</ul>
+</body>
+</html>

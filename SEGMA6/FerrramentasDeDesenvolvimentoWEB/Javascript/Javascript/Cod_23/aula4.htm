@@ -1,0 +1,217 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>Aula 4 - Eventos em Javascript</title>
+</head>
+
+<body>
+
+<dl>
+    <dd><p align="center"><font color="#FF0000" size="4"><strong>Aula
+        4 - Eventos em Javascript e Objetos de Formulário</strong></font></p>
+    </dd>
+</dl>
+
+<p>Eventos são acontecimentos que ocorrem durante a navegação
+em uma página da web. Em Javascript existem basicamente dois
+tipos de eventos <strong>Eventos de Sistemas e Eventos de Mouse</strong></p>
+
+<p><strong>1-) Eventos de Sistemas:</strong> São aqueles que
+entram am ação automaticamente sem a intervenção do
+internauta.Os principais são <strong>onLoad </strong>(ao
+carregar) e <strong>onUnload </strong>(ao descarregar) que são
+adicionados na tag &lt;body&gt; em HTML que representa o início
+do corpo da página.Veja um exemplo:</p>
+
+<ul>
+    <li>Abra o Bloco de notas e digite o código abaixo com muita
+        atenção:</li>
+</ul>
+
+<p align="left"><img border="0" src="aula4.1.gif" width="638" height="255"></p>
+
+<ul>
+    <li><p align="left">Ao terminar, salve este arquivo com o
+        nome de <strong>exeevensis.htm</strong> e abra no seu
+        navegador padrão. Caso tenha alguma dúvida de como
+        realizar esta operação, volte a aula 1.</p>
+    </li>
+    <li><p align="left">Clique no link para ver o resultado <a
+        href="exeevensis.htm" target="_Blank">Clique aqui para ver um exemplo</a></p>
+    </li>
+</ul>
+
+<p align="left"><strong>2-) Eventos de Mouse:</strong> São
+aqueles que acionam ações mediante o uso do mouse como por
+exemplo (click do mouse, duplo click do mouse, ao pressionar o
+botão do mouse , ao soltar o botão do mouse, etc)</p>
+
+<p align="left">Um exemplo claro dos eventos de mouse eu utilizei
+na último exemplo da aula 3 e caso não se lembre, clique no
+link para ver o resultado. <a href="winstatus.htm" target="_Blank">Clique
+aqui para ver um exemplo</a></p>
+
+<p align="left">Abaixo estarei relacionando os principais eventos
+de mouse.</p>
+
+<ul>
+    <li><p align="left"><strong>onClick : </strong>Ocorre quando
+        o botão do mouse for clicado</p>
+    </li>
+    <li><p align="left"><strong>onDblclick:</strong> Ocorre
+        quando o botão do mouse sofrer um clique duplo</p>
+    </li>
+    <li><p align="left"><strong>onmouseMove:</strong> Ocorre
+        quando o ponteiro do mouse passar sobre o objeto</p>
+    </li>
+    <li><p align="left"><strong>onmouseOver:</strong> Ocorre
+        quando o ponteiro do mouse ficar acima do objeto</p>
+    </li>
+    <li><p align="left"><strong>onmouseOut:</strong> Ocorre
+        quando você retirar o ponteiro do mouse do objeto</p>
+    </li>
+    <li><strong>onSubmit:</strong> Ocorre quando o internauta
+        clica no botão enviar com objetos de formulários</li>
+</ul>
+
+<ul>
+    <li><strong>onFocus: </strong>Ocorre quando um objeto ganhar
+        o focu com o click do mouse ou o uso da tecla TAB</li>
+</ul>
+
+<ul>
+    <li><strong>onChange :</strong> Ocorre quando o contéudo de
+        uma caixa de texto for alterado</li>
+</ul>
+
+<p align="center"><font color="#FF0000" size="4"><strong>Objetos
+de Formulário</strong></font></p>
+
+<p>Falar de eventos sem mencionar os objetos de formulário fica
+difícil de ver a razão de seu estudo. Os objetos de formulário
+permite a construção de páginas com botões de comando,
+botões de rádio, caixa de texto, caixa de seleção, a fim
+projetar um formulário para enviar estes dados ao destinatário.
+Veremos agora como construir os principais objetos.</p>
+
+<p>Para construir esses objetos todas as tags deverão serem
+escritas na tag &lt;form&gt;..&lt;/form&gt; por se tratar de
+objetos de formulário e assim atribuir uma ação a este objeto.</p>
+
+<p><font color="#008000"><strong>1-) Botão de comando: </strong></font></p>
+
+<p><strong>&lt;form&gt;</strong></p>
+
+<p><strong>&lt;input type=&quot;button&quot; name=&quot;bt1&quot;
+value=&quot;Clique no botão&quot; onclick=&quot;alert('Você
+clicou no botão')&quot;&gt;</strong></p>
+
+<p><strong>&lt;/form&gt;</strong></p>
+
+<form method="POST" name="form1" form>
+    <p align="left"><input type="submit" name="B1"
+    value="Clique no botão"
+    onclick="alert(&quot;Você clicou no botão&quot;)"> </p>
+    <p align="left"><font color="#008000"><strong>2-)Botão de
+    radio: </strong></font></p>
+    <p><strong>&lt;form&gt;</strong></p>
+    <p><strong>&lt;input type=&quot;radio&quot;
+    name=&quot;opt1&quot; alert('Você clicou no
+    botão')&quot;&gt;Clique na opção</strong></p>
+    <p><strong>&lt;/form&gt;</strong></p>
+    <p align="left"><input type="radio" name="R1" value="V1"
+    onclick="alert(&quot;Agora você clicou no botão de rádio&quot;)"><strong>Clique
+    na opção</strong></p>
+    <p align="left"><font color="#008000"><strong>3-)Caixa de
+    verificação:</strong></font></p>
+    <p><strong>&lt;form&gt;</strong></p>
+    <p><strong>&lt;input type=&quot;checkbox&quot;
+    name=&quot;chk1&quot; onclick=&quot;alert('Você clicou no
+    botão')&quot;&gt;Clique na opção</strong></p>
+    <p><strong>&lt;/form&gt;</strong></p>
+    <p><input type="checkbox" name="C1" value="ON"
+    onclick="alert(&quot;Agora você marcou a opção&quot;)"><strong>Marque
+    a opção</strong></p>
+    <p><font color="#008000"><strong>4-)Caixa de Texto:</strong></font><strong>
+    </strong></p>
+    <p><strong>&lt;form&gt;</strong></p>
+    <p><strong>&lt;input type=&quot;text&quot;
+    name=&quot;texto1&quot; size=&quot;35&quot;
+    maxlength=&quot;35&quot; value=&quot;Curso de
+    Javascript&quot; onChange=&quot;alert('Você alterou o
+    conteúdo')&quot;&gt;</strong></p>
+    <p><strong>&lt;/form&gt;</strong></p>
+    <p><!--webbot bot="Validation" s-display-name="Você precisa digitar algo"
+    s-data-type="String" b-allow-letters="TRUE" --><input
+    type="text" size="20" name="T1" value="Curso de Javascript"
+    onchange="alert(&quot;Você alterou o conteúdo&quot;)"> </p>
+    <p>Altere o texto e depois dê um clique em qualquer região
+    da página para visualizar a mensagem.</p>
+    <p><font color="#008000"><strong>5-)Caixa de Seleção:</strong></font></p>
+    <p><strong>&lt;form name=&quot;form1&gt;</strong></p>
+    <p><strong>
+    <script language="Javascript">
+	function estados(){
+	 var rec=document.form1.siglas.value;
+    if (rec=='SP'){alert('A Sigla corresponde ao Estado de São Paulo');}
+	 if (rec=='MA'){alert('A Sigla corresponde ao Estado do Maranhão');}
+    if (rec=='CE'){alert('A Sigla corresponde ao Estado do Ceará');}
+	if (rec=='PE'){alert('A Sigla corresponde ao Estado do Pernambuco');}
+	if (rec=='PI'){alert('A Sigla corresponde ao Estado do Piauí');}
+	if (rec=='MG'){alert('A Sigla corresponde ao Estado de Minas Gerais');}
+}</script>
+ <p>Escolha uma das siglas na caixa de seleção e veja o
+    resultado na caixa de <strong>alert ( )</strong></p>
+   <p><select name="siglas" size="1" onchange="estados()">
+    
+    <option value="Siglas">Estados</option> 
+    <option value="SP">SP</option>
+    <option value="MA">MA</option>
+    <option value="CE">CE</option>
+    <option value="PE">PE</option>
+    <option value="MG">MG</option>
+    <option value="PI">PI</option>
+    </select></p>
+  
+
+<p>Bom, os eventos acima relacionados e os objetos de
+formulário, considero como os principais e agora para
+compreender melhor vamos fazer um exemplo e depois vou lançar o
+seu primeiro desafio.</p>
+
+<p><strong>Exemplo</strong></p>
+
+<p>Vamos criar um script que permita ao internauta escolher
+através de um clique no botão uma cor de fundo para sua
+página. Para isso vamos seguir o layout(modelo) de página,
+conforme abaixo:</p>
+
+<p align="center"><img src="aula4.1.jpg" width="712" height="313"></p>
+
+<p align="left">Para montagem desta página digite o código
+abaixo no bloco de notas e salve o arquivo com o nome de <strong>execorfundo.htm</strong>
+e logo em seguida abra o arquivo salvo no seu navegador.</p>
+
+<p align="center"><img src="aula4.2.jpg" width="713" height="323"></p>
+
+    <p align="left">Neste exemplo utilizei o objeto de formulário &quot;button&quot;
+    aplicando a cada um os objeto o evento de mouse onclick e logo em seguida a
+    instrução que determina a cor de fundo da página. Talvez você esteja se
+    perguntado que instrução é essa&nbsp; &amp;nbsp ??? Este comando serve
+    para aplicar um espaço entre os objeto , ou seja, um toque na barra de
+    espaço.</p>
+
+    <p align="left"><a href="execorfundo.htm" target="_"Blank">Clique aqui e veja o resultado
+    deste exemplo</a></p>
+
+<p>&nbsp;</p>
+    </strong>
+</form>
+<p><strong>Legal, agora vou lançar o seu primeiro desafio.....</strong></p>
+<p><strong>1-) Altere os objeto da página onde no lugar do botão de comando,
+deverá aparecer o botão de radio.</strong></p>
+</body>
+</html>

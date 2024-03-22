@@ -1,0 +1,271 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>Aula 3 - Comando Básicos de Javascript</title>
+</head>
+
+<body>
+
+<p align="center"><font color="#FF0000" size="4"><b>Aula 3 -
+Comandos Básicos de Javascript</b></font></p>
+
+<p align="left">Vamos iniciar o estudo dos vários comandos de
+Javascript. Gostaria de lembrar que Javascript é sensível as
+letras maiúsculas e minúsculas e portanto você deverá digitar
+exatamente igual todos os comandos nos exemplos para que
+funcionem de forma correta.</p>
+
+<p align="left"><font color="#800000"><b><u>Objeto document</u></b></font></p>
+
+<p align="left">O objeto document é um dos mais importantes no
+desenvolvimento de scripts em Javascript, pois atráves dele
+podemos enviar informações para o internauta.</p>
+
+<p align="left">document.write( ) : Este comando permite escrever
+qualquer informação na página que pode ser um texto ou o
+conteúdo de uma variável de memória.</p>
+
+<p align="left"><b>Exemplo de impressão de um texto:</b></p>
+
+<p align="left"><font color="#008000"><b>&nbsp;document.write(&quot;Programando
+em Javascript&quot;);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font
+color="#0000FF"> </font><a href="exedowrite.htm"><font
+color="#0000FF">Clique aqui para ver um exemplo</font></a><font
+color="#0000FF"> </font></p>
+
+<p align="left"><b>Exemplo de impressão do conteúdo de uma
+variável:</b></p>
+
+<p align="left"><font color="#008000"><b>document.write(&quot;Olá
+&quot;+nome+&quot; Seja Bem Vindo !!!&quot;);</b><b><i>&nbsp;&nbsp;&nbsp;</i></b></font><font
+color="#0000FF"> </font><a href="exedovar.htm"><font
+color="#0000FF">Clique aqui para ver um exemplo</font></a></p>
+
+<p align="left">document.bgColor : Este comando afeta diretamente
+a cor de fundo da página, ou seja, tem o mesmo efeito da tag em
+html &lt;body bgcolor=&quot;nome_da_cor&quot;&gt;</p>
+
+<p align="left"><b>Exemplo </b></p>
+
+<p align="left"><font color="#008000"><b>document.bgColor=&quot;red&quot;;&nbsp;&nbsp;&nbsp;&nbsp;</b></font>
+<font color="#008000"><a href="exedobg.htm" target="_Blank">Clique aqui para ver um exemplo</a></font></p>
+
+<p align="left">document.fgColor : Este comando tem o efeito
+contrário ao document.bgColor, pois ele altera a cor da letra na
+página</p>
+
+<p align="left"><b>Exemplo</b></p>
+
+<p align="left"><font color="#008000"><b>document.fgColor=&quot;orange&quot;;</b></font><font
+color="#0000FF">&nbsp;&nbsp;&nbsp; </font><a href="exedofg.htm"><font
+color="#0000FF">Clique aqui para ver um exemplo</font></a></p>
+
+<p align="left">document.title : Define um título para a página
+atual , ou seja, tem o mesmo efeito que a tag
+&lt;title&gt;..&lt;/title&gt;</p>
+
+<p align="left"><b>Exemplo</b></p>
+
+<p align="left"><font color="#008000"><b>document.title=&quot;Curso
+de Javascript&quot;;</b></font><font color="#0000FF">&nbsp; </font><a
+href="exedotitle.htm" target="_blank"><font color="#0000FF">Clique
+aqui para ver um exemplo</font></a></p>
+
+<p align="left">document.lastModified : Exibe a data da última
+atualização da página</p>
+
+<p align="left"><b>Exemplo</b></p>
+
+<p align="left"><font color="#008000"><b>document.write(document.lastModified);</b></font><b>&nbsp;&nbsp;</b>&nbsp;
+<a href="exedomod.htm">Clique aqui para ver um exemplo</a></p>
+
+<p align="left"><font color="#800000"><b><u>Objeto window</u></b></font></p>
+
+<p align="left">O objeto window<b> veja bem window e não </b><font
+color="#FF0000"><b>windows</b></font> é outro comando muito
+importante em Javascript pois através dele é que estabelecemos
+uma melhor interação com o internauta. É neste objeto que damos
+condições para a comunicação, como por exemplo, permitir a sua
+identificação no acesso a página.</p>
+
+<p align="left">window.alert( ) : Como já vimos anteriormente,
+este comando exibe uma caixa de diálogo para o internauta.Talvez
+você esteja perguntando:&nbsp; Eu vi este comando escrito de
+outra forma ! .... Sem dúvida alguma você esta certo, o mesmo
+comando foi escrito assim&nbsp; <b>alert( )</b> que também é
+aceito na programação em Javascript.</p>
+
+<p align="left"><b>Exemplo</b></p>
+
+<p align="left"><font color="#008000"><strong>window.alert(&quot;Curso
+de Javascript&quot;);</strong></font></p>
+
+<p align="left"><font color="#008000"><strong>alert(&quot;Curso
+de Javascript&quot;);&nbsp; </strong></font><font color="#0000FF"><a href="exealert.htm">Clique aqui para ver um exemplo</a></font></p>
+
+<p align="left"><font color="#000000">Neste exemplo você deve
+ter notado que a mensagem na caixa do alert( ) foi exibida em duas linhas.
+Isto foi possível graças ao código especial de quebra de linha <strong>&quot;\n&quot;</strong>. Não
+se preocupe mais adiante no curso explicarei com mais detalhes.</font></p>
+
+<p align="left"><font color="#000000">window.prompt( ) : Este
+comando permite ao internauta realizar uma entrada de dados em
+uma caixa padrão e armazenar o dado digitado em uma variável de
+memória.Se você é um bom observador vai notar que já utilizei
+em exemplos anteriores, porém vou ilustrar um novo exemplo.</font></p>
+
+<p align="left"><font color="#000000"><strong>Exemplo</strong></font></p>
+
+<p align="left"><font color="#008000"><strong>var
+nome=window.prompt(&quot;Por favor
+identifique-se.....&quot;,&quot; &quot;);&nbsp;&nbsp;</strong></font><font color="#0000FF">
+<a href="exewprompt.htm">Clique aqui para ver um exemplo</a></font></p>
+
+<p align="left">Assim como o alert ( ) este comando pode ser
+escrito no seguinte formato: </p>
+
+<p align="left"><font color="#008000"><strong>var
+nome=prompt(&quot;Por favor identifique-se....&quot;,&quot;
+&quot;);</strong></font></p>
+
+<p align="left"><font color="#000000">window.open( ): Este
+comando é muito interessante, pois podemos abrir uma página em
+uma nova janela, além de controlar sua posição, tamanho e os
+controles que deverão aparecer na nova janela.Se você já
+acessou alguma página que abre automaticamente aquelas pequenas
+janelinhas com animações ou propagandas, já teve a
+oportunidade de ver como é a reação deste comando na
+página.Um bom exemplo disso é o portal do IG, se tiver uma
+conexão discada, vai perceber que estas janelinhas acabam
+atrasando a carga rápida da página no seu computador.</font></p>
+
+<p align="left"><font color="#000000"><strong>Exemplo</strong></font></p>
+
+<p align="left"><font color="#008000"><strong>window.open(&quot;URL&quot;,&quot;nome_da_janela&quot;,&quot;Parâmetros&quot;);</strong></font></p>
+
+<p align="left"><font color="#000000">URL : é o endereço da
+página a ser aberta</font></p>
+
+<p align="left"><font color="#000000">nome_da_janela : é um nome
+dado a nova janela a ser aberta que mais tarde poderá ser
+referenciada em código, usando o atributo target.</font></p>
+
+<p align="left"><font color="#000000">Parâmetros: aqui são
+mencionados quais são os controles de janela que deverão ser
+exibidos.A seguir explicarei cada um deles.</font></p>
+
+<p align="left"><font color="#000000">status (barra de status):
+possui dois valores <strong>yes(habilita a exibição) e
+no(desabilita a exibição)</strong></font></p>
+
+<p align="center"><img border="0" src="aula3.1.gif" width="410" height="27"></p>
+
+<p align="left"><font color="#000000">location (barra de
+endereço) : possui dois valores <strong>yes(habilita a
+exibição) e no(desabilita a exibição)</strong></font></p>
+
+<p align="center"><img border="0" src="aula3.2.gif" width="409" height="55"></p>
+
+<p align="left"><font color="#000000">toolbar (barra de
+ferramentas) : possui dois valores <strong>yes(habilita a
+exibição) e no(desabilita a exibição)</strong></font></p>
+
+<p align="center"><img border="0" src="aula3.3.gif" width="412" height="70"></p>
+
+<p align="left"><font color="#000000">menubar (barra de menus) :
+possui dois valores <strong>yes(habilita a exibição) e
+no(desabilita a exibição)</strong></font></p>
+
+<p align="center"><img border="0" src="aula3.4.gif" width="411" height="54"></p>
+
+<p align="left"><font color="#000000">scrollsbars (barra de
+rolagem) : possui dois valores <strong>yes(habilita a exibição)
+e no(desabilita a exibição)</strong></font></p>
+
+<p align="center"><img border="0" src="aula3.5.gif" width="429" height="249"></p>
+
+<p align="left"><font color="#000000">left e screenX : definem a
+posição em pixels da janela a ser aberta a partir do lado
+esquerdo da janela do navegador. O left é utilizado no Internet
+Explorer e o screenX no Netscape.</font></p>
+
+<p align="left"><font color="#000000">top e screenY: definem a
+posição em pixels da janela a ser aberta a partir do aldo de
+cima da janela do navegador. O top é utilizado no Internet
+Explorer e o screenY no Netscape.</font></p>
+
+<p align="left"><font color="#000000">height (altura) : Controla
+a altura da nova janela. Este valor deverá ser informado em
+pixels.</font></p>
+
+<p align="left"><font color="#000000">width (largura) : Controla
+a largura da nova janela. Este valor deverá ser informado em
+pixels.</font></p>
+
+<p align="left"><font color="#000000">Finalmente vamos aos
+exemplos.</font></p>
+
+<p align="left"><font color="#000000"><strong>1º Exemplo :</strong>
+</font><a href="sobarrastatus.htm"><font color="#0000FF">Somente
+Barra de Status</font></a></p>
+
+<p align="left"><font color="#000000"><strong>2º Exemplo:</strong>
+</font><a href="sobarraendereco.htm"><font color="#0000FF">Somente
+Barra de Endereço</font></a></p>
+
+<p align="left"><font color="#000000"><strong>3º Exemplo:</strong>
+</font><a href="sobarraferra.htm"><font color="#0000FF">Somente
+Barra de Ferramentas</font></a></p>
+
+<p align="left"><font color="#000000"><strong>4º Exemplo:</strong>
+</font><a href="sobarramenu.htm"><font color="#0000FF">Somente
+Barra de Menus</font></a></p>
+
+<p align="left"><font color="#000000"><strong>5º Exemplo:</strong>
+</font><a href="sobarrarola.htm"><font color="#0000FF">Somente
+Barra de Rolagem</font></a></p>
+
+<p align="left">window.location.ref : Este comando serve para
+redirecionar o internauta para outra url (página)</p>
+
+<p align="left"><strong>Exemplo</strong></p>
+
+<p align="left"><font color="#008000"><strong>window.location.ref=&quot;java.htm&quot;;</strong></font><font
+color="#000000">&nbsp; </font><a href="direcao.htm" target="_Blank"><font color="#0000FF">Clique aqui para ver um exemplo</font></a></p>
+
+<p align="left"><font color="#000000">window.location.reload :
+Este comando serve para atualizar a página atual no navegador.
+Isto mesmo, é como se você pressionasse a tecla <strong>F5</strong>
+ou clique no menu exibir e selecionar atualizar.</font></p>
+
+<p align="left"><font color="#000000"><strong>Exemplo</strong></font></p>
+
+<p align="left"><font color="#008000"><strong>window.location.reload(
+);&nbsp;&nbsp; </strong></font><a href="atualiza.htm" target="_Blank"><font color="#0000FF">Clique
+aqui para ver um exemplo</font></a></p>
+
+<p align="left"><font color="#000000">window.close( ) : Este
+comando fecha a página atual que está aberta no navegador.Ao
+fechar será exibida uma caixa de diálogo do Internet Explorer
+pedindo para confirmar o fechamento da página.</font></p>
+
+<p align="center"><font color="#000000"><img src="aula3.1.jpg"
+width="338" height="124"></font></p>
+
+<p align="left"><font color="#000000"><strong>Exemplo</strong></font></p>
+
+<p align="left"><font color="#008000"><strong>window.close( ); </strong></font><a
+href="java.htm" target="_Blank"><font color="#0000FF">Clique aqui para ver um
+exemplo</font></a></p>
+<p align="left">window.status : Com este comando, você pode exibir qualquer
+mensagem na barra de status do navegador.</p>
+<p align="left"><b>Exemplo</b></p>
+<p align="left"><b><font color="#008000">window.status=&quot;Programação em
+Javascript&quot;;&nbsp;&nbsp;&nbsp;&nbsp; </font></b><a href="wistatus.htm">Clique aqui para ver um exemplo</a></p>
+</body>
+</html>
