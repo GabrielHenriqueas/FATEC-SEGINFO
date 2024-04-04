@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+div.main {
+    background-color: brown;
+    width: 70vw;
+    height: 742px;
+}
+div.aside {
+    background-image: url("./Capas/vinho.jpg");
+    background-size: cover;
+    width: 30vw;
+    height: 742px;
+}
+div.carrossel {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img.carrossel {
+    border: 4px dotted white;
+}
+h1 {
+    color: whitesmoke;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px dotted mistyrose;
+}
+h3 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+}
+ul {
+    color: lightgray;
+    font-size: 10pt;
+    font-weight: bold;
+    list-style-image: url(/Capas/check.png);
+}
