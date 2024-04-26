@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 });
 
 // Função que verifica se ambos os valores são verdadeiros ou falsos
-function verificarValores(valor1, valor2) {
+function verificarValores(valor1, valor2) { 
   if (valor1 == valor2) {
     console.log("Ambos os valores são VERDADEIROS.");
   } else if (valor1 != valor2) {
@@ -31,6 +31,6 @@ rl.question("Digite o primeiro valor (true/false): ", function(valor1) {
     valor2 = valor2 == true;
     
     // Chama a função para verificar os valores
-    verificarValores(valor1, valor2);
+    verificarValores(valor1, valor2); 
   });
 });
