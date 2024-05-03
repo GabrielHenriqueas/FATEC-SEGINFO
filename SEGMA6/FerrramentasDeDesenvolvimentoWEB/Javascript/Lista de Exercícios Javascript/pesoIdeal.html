@@ -1,0 +1,41 @@
+<!-- Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:  
+
+● para homens: (72.7 * h) – 58;
+
+● para mulheres: (62.1 * h) – 44.7. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peso Ideal</title>
+  </head>
+
+  <body>
+    <script>
+      do {
+        const genero = prompt(`Qual é o seu genêro? H/M`).toLowerCase;
+        const altura = prompt(`Qual é sua altura? `);
+
+        if (genero == "h" || genero == "H") {
+
+          const pesoIdeal = 72.7 * altura - 58;
+
+          alert(`Seu peso ideal é ${pesoIdeal}`);
+        } else if (genero == "m" || genero == "M") {
+          const altura = prompt(`Qual é sua altura? `);
+
+          const pesoIdeal = 62.1 * altura - 44.7;
+
+          alert(`Seu peso ideal é ${pesoIdeal}`);
+        } else {
+          genero = prompt(`Valor inválido, selecione entre H/M`).toLowerCase;
+        }
+      } while (
+        genero != "h" ||
+        genero != "m"
+      );
+    </script>
+  </body>
+</html>

@@ -24,10 +24,8 @@ function AlturaIdealMulher(altura) {
     rl.close();
 }
 const genero = null
-if (genero = "h" || genero = "H") {
+if (genero == "h" || genero == "H") {
 
     rl.question(`Qual é o seu genêro? `
     )
 }
-
-
